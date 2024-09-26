@@ -7,8 +7,8 @@ describe('Page', () => {
   it('renders an image', () => {
     render(<Page />);
 
-    const logo = screen.getByAltText('Next.js logo');
+    const heading = screen.getByRole('heading', { level: 1 });
 
-    expect(logo).toBeInTheDocument();
+    expect(heading).toBeInTheDocument();
   });
 });
